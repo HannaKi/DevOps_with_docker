@@ -1,0 +1,21 @@
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker run -d nginx
+6ac95c66f66a60bdc3b3673b43eee5f9b0ee100d00a49afe5eeadf76941b2cb5
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker run -d nginx
+37f44e10d6ff29d9f2426bc1ad69ca36ff7491d9de5222ae68d35a62a659d4dc
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker run -d nginx
+c9fa6f9f5f8d59020be545af7e33da9ed64865f7e95772b6bcb731bcac4a4a67
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+c9fa6f9f5f8d   nginx     "/docker-entrypoint.…"   28 seconds ago   Up 27 seconds   80/tcp    heuristic_goldberg
+37f44e10d6ff   nginx     "/docker-entrypoint.…"   30 seconds ago   Up 29 seconds   80/tcp    competent_morse
+6ac95c66f66a   nginx     "/docker-entrypoint.…"   35 seconds ago   Up 35 seconds   80/tcp    amazing_jennings
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker stop c9
+c9
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker stop 37
+37
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker ps -a  
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
+c9fa6f9f5f8d   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 13 seconds ago             heuristic_goldberg
+37f44e10d6ff   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 7 seconds ago              competent_morse
+6ac95c66f66a   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp    amazing_jennings
+
