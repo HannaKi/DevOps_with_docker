@@ -1,0 +1,29 @@
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+c9fa6f9f5f8d   nginx     "/docker-entrypoint.…"   11 minutes ago   Exited (0) 10 minutes ago             heuristic_goldberg
+37f44e10d6ff   nginx     "/docker-entrypoint.…"   11 minutes ago   Exited (0) 10 minutes ago             competent_morse
+6ac95c66f66a   nginx     "/docker-entrypoint.…"   11 minutes ago   Up 11 minutes               80/tcp    amazing_jennings
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker stop 6a                
+6a
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker container rm c9 37 6a
+c9
+37
+6a
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker ps -a                
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    070027a3cbe0   6 weeks ago   192MB
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker rmi nginx
+Untagged: nginx:latest
+Untagged: nginx@sha256:6db391d1c0cfb30588ba0bf72ea999404f2764febf0f1f196acd5867ac7efa7e
+Deleted: sha256:070027a3cbe09ac697570e31174acc1699701bd0626d2cf71e01623f41a10f53
+Deleted: sha256:e9785ce2b5781161e9ddd4d296b13c0aa8bc4d194384ddd3aaa3d4d8751ba8a7
+Deleted: sha256:a9dc9769b893c2e904117befcb34faf73465b61d2c6fdeb753a92260ab5915d5
+Deleted: sha256:7a63dab716416b819075f6d467699e69ca11dee7f6c139f680dc0881a6063d90
+Deleted: sha256:8c4c9c05b261a10ca0f4c77ba96fb68d10f6468b50d72cc8e524248f1f4c3a23
+Deleted: sha256:1f1a6c5e213a27abd68146e1faa166cf682d110a94b283a1d81ebb96ff974c5a
+Deleted: sha256:255faa6ea16a4910c684951a91be6b06b5dbcd02af2f2058b67d46380eeef1f5
+Deleted: sha256:d64c46ff900ce5a646435f2232e9bdd0c551cc61e727d4d9502d48ce9dcefd25
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker image ls 
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
