@@ -1,0 +1,29 @@
+Script started on Sat Mar 30 13:50:34 2024
+Restored session: Fri Mar 29 19:44:16 EET 2024
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004h[7mdocker run -d nginx[27m[19D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27md[27m [27mn[27mg[27mi[27mn[27mx[?2004l
+6ac95c66f66a60bdc3b3673b43eee5f9b0ee100d00a49afe5eeadf76941b2cb5
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004hdocker run -d nginx[?2004l
+37f44e10d6ff29d9f2426bc1ad69ca36ff7491d9de5222ae68d35a62a659d4dc
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004hdocker run -d nginx[?2004l
+c9fa6f9f5f8d59020be545af7e33da9ed64865f7e95772b6bcb731bcac4a4a67
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004hddicke   d docle  e ker ps- a   -a[?2004l
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+c9fa6f9f5f8d   nginx     "/docker-entrypoint.…"   28 seconds ago   Up 27 seconds   80/tcp    heuristic_goldberg
+37f44e10d6ff   nginx     "/docker-entrypoint.…"   30 seconds ago   Up 29 seconds   80/tcp    competent_morse
+6ac95c66f66a   nginx     "/docker-entrypoint.…"   35 seconds ago   Up 35 seconds   80/tcp    amazing_jennings
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004hddocker stop c9[?2004l
+c9
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004hdocker stop c9  37[?2004l
+37
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004hdocker stop 37c9ps -a  [?2004l
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
+c9fa6f9f5f8d   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 13 seconds ago             heuristic_goldberg
+37f44e10d6ff   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 7 seconds ago              competent_morse
+6ac95c66f66a   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp    amazing_jennings
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hannas-MacBook-Pro.local/Users/kittiha/Opiskelu/utu/devopswithdocker[0m[27m[24m[J(base) kittiha@Hannas-MacBook-Pro devopswithdocker % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Sat Mar 30 13:53:37 2024
