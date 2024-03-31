@@ -1,0 +1,28 @@
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker run -d -it --name ex3 devopsdockeruh/simple-web-service:ubuntu 
+Unable to find image 'devopsdockeruh/simple-web-service:ubuntu' locally
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+5d3b2c2d21bb: Pull complete 
+3fc2062ea667: Pull complete 
+75adf526d75b: Pull complete 
+965d4bbb586a: Pull complete 
+4f4fb700ef54: Pull complete 
+Digest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:ubuntu
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+74c71b9aae3986e2b5ac5257e975a43197bd72326fcecac7f8cd229af36883b3
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker ps -a
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED          STATUS          PORTS     NAMES
+74c71b9aae39   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   40 seconds ago   Up 40 seconds             ex3
+(base) kittiha@Hannas-MacBook-Pro devopswithdocker % docker exec -it ex3 bash   
+root@74c71b9aae39:/usr/src/app# tail -f ./text.log
+2024-03-30 13:54:51 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-03-30 13:54:53 +0000 UTC
+2024-03-30 13:54:55 +0000 UTC
+2024-03-30 13:54:57 +0000 UTC
+2024-03-30 13:54:59 +0000 UTC
+2024-03-30 13:55:01 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-03-30 13:55:03 +0000 UTC
+
+AND in other terminal: (base) kittiha@Hannas-MacBook-Pro ~ % docker stop ex3 
